@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Koji's contact detail</title>
+</head>
+<body>
+  <h1>My Contact Details</h1>
+  <ul>
+    <li>Address: Nishi-Chiba, Japan</li>
+    <li>Email: kou747tanaka@gmail.com</li>
+  </ul>
+  <hr>
+
+  <form action="mailto:hellothisispractice@gmail.com" method="post" enctype="text/plain">
+    <!-- method post is pretty important to give input information to the value -->
+    <label for="yourName">Your name:</label>
+    <!-- This for is bonded to the id of input -->
+    <input type="text" id="yourName" name="yourName" value=""><br>
+    <!-- if you add some information to the value, the form is automatically filled. -->
+    <label for="yourEmail">Your email:</label>
+    <input type="email" id="yourEmail" name="yourEmail" value=""><br>
+    <label for="yourText">Your message</label><br>
+    <textarea name="yourText" id="yourText" name="yourText" cols="30" rows="10" value=""></textarea><br>
+    <input type="submit" value="Send an email">
+  </form>
+</body>
+</html>
